@@ -1,10 +1,13 @@
 <html>
 <title>Search for NODMs</title>
 <body>
-<form action="do_search_nodm" method="get">
+<% if site_error %>
+<div style="color: red; padding: 5px;"><%= site_error %></div>
+<% end %>
+<form method="get">
 <label for="nodm">Enter NODM</label>
 <input type="text" name="nodm" />
-<button type="submit">Submit</button>
+<button type="submit">Search</button>
 </form>
 </body>
 </html>
