@@ -1,8 +1,19 @@
 <% if site_error %>
 <div style="color: red; padding: 5px;"><%= site_error %></div>
 <% end %>
-<form method="get">
-<label for="nodm">Enter NODM</label>
-<input type="text" name="nodm" />
-<button type="submit">Search</button>
-</form>
+<div class="row">
+  &nbsp;
+</div>
+<div class="row">
+  <div class="col-md-4 col-md-offset-1">
+    <form method="get">
+      <div class="form-group">
+        <label for="nodm">Enter NODM</label>
+        <input class="form-control" type="text" name="nodm" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-default" type="submit">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
