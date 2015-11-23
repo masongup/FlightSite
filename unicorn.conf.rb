@@ -2,7 +2,7 @@ listen '127.0.0.1:4567'
 preload_app false
 timeout 10
 
-if ENV['RAILS_ENV'] == 'production'
+if ENV['RACK_ENV'] == 'production'
   worker_processes 2
   pid 'tmp/unicorn.pid'
 
