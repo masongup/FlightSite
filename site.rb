@@ -4,10 +4,6 @@ require 'rest-client'
 require_relative 'date_compute'
 
 get('/') do
-  'Hello, World!'
-end
-
-get('/Functions') do
   erb(:site_functions, { locals: { errors: { } } } )
 end
 
