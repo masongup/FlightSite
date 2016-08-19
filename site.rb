@@ -28,7 +28,7 @@ get('/SearchNodm') do
 
       norm_results = parsed.css('#resultsHomeLeft #notamRight span').map { |x| x.text.gsub('!', '') }
       
-      erb(:do_search_nodm, { locals: { data: norm_results } } )
+      erb(:do_search_nodm, { locals: { data: norm_results, nodm: nodm_input } } )
     rescue => e
       logger.error e.to_s
       erb(:site_functions, { locals: { errors: { nodm_error: 'An error occured trying to retrieve the NODMs' } } } )
