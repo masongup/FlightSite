@@ -4,6 +4,13 @@ require 'rest-client'
 require_relative 'date_compute'
 
 class FlightSite < Sinatra::Base
+  configure :production do
+    enable :logging
+    file = File.new('/var/flight_site_logs/log.txt', 'a+')
+    file.sync = true
+    use Rack::CommonLogger, file
+  end
+
   get('/') do
     erb(:site_functions, { locals: { errors: { } } } )
   end
