@@ -10,4 +10,5 @@ gem 'puma', '~> 6.3'
 
 group :development do
   gem 'rerun'
+  gem 'rspec'
 end
