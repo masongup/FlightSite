@@ -4,7 +4,7 @@ require 'rest-client'
 require_relative 'date_compute'
 
 class FlightSite < Roda
-  plugin :render
+  plugin :render, engine: 'haml'
 
   route do |r|
     r.root do

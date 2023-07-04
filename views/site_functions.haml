@@ -1,0 +1,26 @@
+.row &nbsp;
+.row
+  .col-md-offset-1.h1.col-xs-offset-1 NODM Search 
+.row
+  .col-md-4.col-md-offset-1.col-xs-offset-1.col-xs-9
+    - if errors[:nodm_error]
+      %div{style: 'color: red; padding: 5px;'}= errors[:nodm_error]
+    %form{method: 'get', action: "#{request.path}SearchNodm"}
+      .form-group
+        %label{for: 'nodm'} Enter NODM
+        %input.form-control{type: 'text', name: 'nodm'}
+      .form-group
+        %button.btn.btn-default{type: 'submit'} Search
+.row
+  .col-md-offset-1.h1.col-xs-offset-1 Compute ETA
+.row
+  .col-md-4.col-md-offset-1.col-xs-offset-1.col-xs-9
+    %form{method: 'get', action: "#{request.path}ConvertTime"}
+      .form-group
+        %label{for: 'DepTime'} Departure Time
+        %input.form-control{type: 'text', name: 'DepTime'}
+      .form-group
+        %label{for: 'ETE'} ETE
+        %input.form-control{type: 'text', name: 'ETE'}
+      .form-group
+        %button.btn.btn-default{type: 'submit'} Convert
