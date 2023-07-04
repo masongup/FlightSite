@@ -1,52 +1,56 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    domain_name (0.5.20170404)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    http-cookie (1.0.3)
+    ffi (1.15.5)
+    http-accept (1.7.0)
+    http-cookie (1.0.5)
       domain_name (~> 0.5)
-    kgio (2.11.2)
-    mime-types (3.1)
+    listen (3.8.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    mime-types (3.4.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
-    mini_portile2 (2.3.0)
-    minitest (5.11.3)
-    mustermann (1.0.2)
+    mime-types-data (3.2023.0218.1)
     netrc (0.11.0)
-    nokogiri (1.8.2)
-      mini_portile2 (~> 2.3.0)
-    rack (2.0.4)
-    rack-protection (2.0.1)
-      rack
-    raindrops (0.19.0)
-    rake (12.3.0)
-    rest-client (2.0.2)
+    nio4r (2.5.9)
+    nokogiri (1.15.2-x86_64-linux)
+      racc (~> 1.4)
+    puma (6.3.0)
+      nio4r (~> 2.0)
+    racc (1.7.1)
+    rack (3.0.8)
+    rake (13.0.6)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
+    rerun (0.14.0)
+      listen (~> 3.0)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    sinatra (2.0.1)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.1)
-      tilt (~> 2.0)
-    tilt (2.0.8)
+    roda (3.69.0)
+      rack
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
-    unicorn (5.4.0)
-      kgio (~> 2.6)
-      raindrops (~> 0.7)
+    unf_ext (0.0.8.2)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
-  minitest
-  nokogiri
-  rake
-  rest-client
-  sinatra
-  unicorn
+  nokogiri (~> 1.15)
+  puma (~> 6.3)
+  rake (~> 13.0)
+  rerun
+  rest-client (~> 2.1)
+  roda (~> 3.69)
+
+RUBY VERSION
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   1.14.6
+   2.4.13

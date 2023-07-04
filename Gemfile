@@ -1,8 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'sinatra'
-gem 'nokogiri'
-gem 'rest-client'
-gem 'unicorn'
-gem 'rake'
-gem 'minitest'
+ruby '3.2.2'
+
+gem 'roda', '~> 3.69'
+gem 'nokogiri', '~> 1.15'
+gem 'rest-client', '~> 2.1'
+gem 'rake', '~> 13.0'
+gem 'puma', '~> 6.3'
+
+group :development do
+  gem 'rerun'
+end

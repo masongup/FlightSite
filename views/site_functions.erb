@@ -11,7 +11,7 @@
     <% if errors[:nodm_error] %>
       <div style="color: red; padding: 5px;"><%= errors[:nodm_error] %></div>
     <% end %>
-    <form method="get" action="<%= request.path %>/SearchNodm">
+    <form method="get" action="<%= request.path %>SearchNodm">
       <div class="form-group">
         <label for="nodm">Enter NODM</label>
         <input class="form-control" type="text" name="nodm" />
@@ -29,7 +29,7 @@
 </div>
 <div class="row">
   <div class="col-md-4 col-md-offset-1 col-xs-offset-1 col-xs-9">
-    <form method="get" action="<%= request.path %>/ConvertTime">
+    <form method="get" action="<%= request.path %>ConvertTime">
       <div class="form-group">
         <label for="DepTime">Departure Time</label>
         <input class="form-control" type="text" name="DepTime" />

@@ -1,2 +1,2 @@
 require './site.rb'
-run FlightSite
+run FlightSite.freeze.app
