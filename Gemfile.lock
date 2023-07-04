@@ -5,6 +5,10 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     ffi (1.15.5)
+    haml (6.1.1)
+      temple (>= 0.8.2)
+      thor
+      tilt
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
@@ -48,6 +52,9 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.1)
+    temple (0.10.2)
+    thor (1.2.2)
+    tilt (2.2.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -56,6 +63,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  haml (~> 6.1)
   nokogiri (~> 1.15)
   puma (~> 6.3)
   rake (~> 13.0)
@@ -63,6 +71,7 @@ DEPENDENCIES
   rest-client (~> 2.1)
   roda (~> 3.69)
   rspec
+  tilt (~> 2.2.0)
 
 RUBY VERSION
    ruby 3.2.2p53

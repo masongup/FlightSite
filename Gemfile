@@ -7,6 +7,8 @@ gem 'nokogiri', '~> 1.15'
 gem 'rest-client', '~> 2.1'
 gem 'rake', '~> 13.0'
 gem 'puma', '~> 6.3'
+gem 'tilt', '~> 2.2.0'
+gem 'haml', '~> 6.1'
 
 group :development do
   gem 'rerun'
