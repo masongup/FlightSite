@@ -1,3 +1,4 @@
 .git
 spec/
 .rspec
+.byebug_history
