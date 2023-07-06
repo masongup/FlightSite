@@ -48,7 +48,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  faraday
+  faraday (~> 2.7.9)
   haml (~> 6.1)
   puma (~> 6.3)
   rake (~> 13.0)
