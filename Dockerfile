@@ -10,5 +10,4 @@ ENV BUNDLE_DEPLOYMENT=true \
 COPY Gemfile* ./
 RUN bundle install
 COPY . ./
-EXPOSE 3000
 ENTRYPOINT ["bundle", "exec", "puma", "--config", "puma.rb"]

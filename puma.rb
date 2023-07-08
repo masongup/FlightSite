@@ -1,3 +1,3 @@
 threads 5, 5
 environment 'production'
-port 3000
+port ENV.fetch('PORT', 3000)
